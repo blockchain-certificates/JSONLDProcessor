@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		839374F01D9DA96500CD1502 /* JSONLDProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 839374EE1D9DA96500CD1502 /* JSONLDProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		839374F81D9DAB7600CD1502 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 839374F61D9DAB7600CD1502 /* index.html */; };
+		839374F91D9DAB7600CD1502 /* JSONLDProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839374F71D9DAB7600CD1502 /* JSONLDProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		839374EB1D9DA96500CD1502 /* JSONLDProcessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONLDProcessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		839374EE1D9DA96500CD1502 /* JSONLDProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONLDProcessor.h; sourceTree = "<group>"; };
 		839374EF1D9DA96500CD1502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839374F61D9DAB7600CD1502 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		839374F71D9DAB7600CD1502 /* JSONLDProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLDProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				839374EE1D9DA96500CD1502 /* JSONLDProcessor.h */,
+				839374F61D9DAB7600CD1502 /* index.html */,
+				839374F71D9DAB7600CD1502 /* JSONLDProcessor.swift */,
 				839374EF1D9DA96500CD1502 /* Info.plist */,
 			);
 			path = JSONLDProcessor;
@@ -96,6 +102,7 @@
 					839374EA1D9DA96500CD1502 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = CYEWR6MU44;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -122,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839374F81D9DAB7600CD1502 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839374F91D9DAB7600CD1502 /* JSONLDProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +249,7 @@
 		839374F41D9DA96500CD1502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CYEWR6MU44;
@@ -252,6 +262,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.blockcerts.JSONLDProcessor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +270,7 @@
 		839374F51D9DA96500CD1502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CYEWR6MU44;
